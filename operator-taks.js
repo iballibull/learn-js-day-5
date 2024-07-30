@@ -10,15 +10,19 @@ try {
 }
 
 // Display true if the name of books have same name otherwise display false
-console.log(favouriteBook1 == favouriteBook2);
+console.log(favouriteBook1 === favouriteBook2);
 
 // TASK 2
 let priceOfBook1 = 100000;
 let priceOfBook2 = 75000;
 
+// Find highest price
+let highestPrice = priceOfBook1 > priceOfBook2 ? priceOfBook1 : priceOfBook2;
+console.log(`The highnest price of two books is ${highestPrice} `);
+
 // Find the average price from those 2 books
 let avaragePrice = (priceOfBook1 + priceOfBook2) / 2;
-console.log(`The average price of two books is Rp ${avaragePrice.toLocaleString('id-ID')}`);
+console.log(`The average price of two books is ${avaragePrice}`);
 
 //  If the average price more than 500000 Expensive
 let priceCategory = avaragePrice > 500000 ? 'Expensive' : 'Cheap';
